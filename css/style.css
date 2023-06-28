@@ -452,7 +452,7 @@ h6, .h6 {
 
 @media (max-width: 1200px) {
   .display-3 {
-    font-size: calc(0.1rem + 3.9vw) ;
+    font-size: calc(1.1rem + 2.9vw) ;
   }
 }
 
@@ -2858,8 +2858,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #0bceaf;
+  border-color: #0bceaf;
 }
 
 .btn-outline-light:hover {
@@ -7528,7 +7528,7 @@ button.bg-dark:focus {
 }
 
 .w-100 {
-  width: 100% !important;
+  width: 88% !important;
 }
 
 .w-auto {
@@ -7710,7 +7710,8 @@ button.bg-dark:focus {
 
 .mr-5,
 .mx-5 {
-  margin-right: 3rem !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
 }
 
 .mb-5,
@@ -9992,14 +9993,29 @@ h6,
 }
 
 .social-icons{
-  background-color: #109680a1;
-    backdrop-filter: blur(20px);
-    /* padding: 9px; */
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 60px;
+    padding-top: 22px;
+    padding-bottom: 12px;
+    padding-left: 40px;
     border-radius: 57px;
-    padding-right: 60px;
+    padding-right: 40px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    border-radius: 57px;
+    position: absolute;
+    top: -17px;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    left: 0;
+    border-radius: 0px 0px 44px 44px;
+    background: #0bceaf;
+    right: 0;
+    width: 254px;
 }
 
 
@@ -10026,8 +10042,16 @@ h6,
 }
 
 .body{
-  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+
     
 overflow-y: hidden; // hide vertical
 overflow-x: hidden; // hide horizontal
 }
+
+
+.social {
+  width: 50%;
+  display: inline-block;
+  
+}
+
