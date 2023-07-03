@@ -2860,6 +2860,7 @@ fieldset:disabled a.btn {
 .btn-outline-light {
   color: #0bceaf;
   border-color: #0bceaf;
+  font-weight: 800 !important;
 }
 
 .btn-outline-light:hover {
