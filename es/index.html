@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Emanuel Skorepa — UI/UX Designer, Frontend Designer y Artista 3D especializado en diseño de interfaces, experiencias digitales, branding y desarrollo web centrado en el usuario.">
+  <title>Emanuel Skorepa — UI/UX Designer & Frontend Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-ring"></div>
+</div>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <!-- Columna Izquierda (En móviles contiene el botón, en escritorio equilibra el ancho) -->
+  <div class="nav-left">
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Menú Centrado Horizontalmente (Oculto en móvil) -->
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#experience">CV</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+  </ul>
+
+  <!-- Columna Derecha con Selector de Idioma -->
+  <div class="nav-right">
+    <div class="lang-selector">
+      <select id="langSelect" onchange="changeLanguage(this.value)" aria-label="Seleccionar Idioma">
+        <option value="en" selected>ES</option>
+        <option value="es">EN</option>
+        <option value="it">IT</option>
+      </select>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">Sobre mí</a>
+  <a href="#skills" onclick="closeMobile()">Habilidades</a>
+  <a href="#experience" onclick="closeMobile()">CV</a>
+  <a href="#portfolio" onclick="closeMobile()">Portfolio</a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-blob hero-blob-3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Hola</div>
+      <h1 class="hero-name">Emanuel<br><span class="accent">Skorepa</span></h1>
+      <p class="hero-title">UX/UI Designer · Web Designer · 3D Modeling</p>
+
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn-primary">Explorar proyectos</a>
+        <a href="#about" class="btn-ghost">Sobre mí</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/emanuelsko/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.behance.net/emanuelsko" target="_blank" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        <a href="https://www.instagram.com/emanuelsko" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.artstation.com/emanuelsko" target="_blank" aria-label="ArtStation"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512" fill="currentColor"><path d="m2 377.4l43 74.3A51.35 51.35 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.38 51.38 0 0 0 290.2 32h-88.4l257.3 447.6l40.7-70.5c1.9-3.2 21-29.7 2-59.1M275 304.5l-115.5-200L44 304.5z"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-image-glass">
+        <div class="hero-img-glow"></div>
+        <img src="assets/yo-1.webp" alt="Emanuel Skorepa">
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-arrow">
+    <span>scroll</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <video autoplay loop muted playsinline poster="assets/alpaca.webp">
+          <source src="assets/alpaca2.webm" type="video/webm">
+            Tu navegador no soporta la etiqueta de video.
+          </video>
+     </div>
+      <div class="about-text">
+        <span class="section-label">Sobre mí</span>
+        <h2 class="section-heading reveal">Diseñador<br>multidisciplinario</h2>
+        <p class="reveal reveal-delay-1">Transformo ideas complejas en experiencias digitales intuitivas y visualmente atractivas. Mi perfil combina sólidas bases en diseño gráfico, desarrollo Frontend, especialización en UI/UX y modelado 3D. Esta visión transversal me permite abordar los proyectos desde múltiples ángulos, asegurando la viabilidad técnica sin sacrificar en absoluto la calidad estética.</p>
+        <p class="reveal reveal-delay-2">A lo largo de mi carrera participé en proyectos relacionados con ecommerce, branding, aplicaciones mobile, videojuegos, productos digitales orientados a conversión y creacion de modelos 3D orientados a impresion 3D. Me interesa crear experiencias claras, escalables y centradas en las personas, manteniendo siempre atención al detalle y una estética cuidada.</p>
+        <div class="tags reveal reveal-delay-3">
+          <span class="tag">Visión estratégica</span>
+          <span class="tag">Resolución de problemas</span>
+          <span class="tag">Adaptabilidad</span>
+          <span class="tag">Orientación a resultados</span>
+          <span class="tag">Trabajo colaborativo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills">
+  <div class="section-inner">
+    <span class="section-label reveal">Habilidades</span>
+    <h2 class="section-heading reveal">¿Con qué trabajo?</h2>
+    <div class="skills-grid">
+      <div class="glass-card skill-card reveal reveal-delay-1">
+        <div class="skill-icon"><i class="fa-solid fa-object-group"></i></div>
+        <h3>UI/UX Design</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Adobe XD</span>
+          <span class="skill-pill">Canva</span>
+        </div>
+      </div>
+      <div class="glass-card skill-card reveal reveal-delay-2">
+        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Web Designer</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">Javascript</span>
+          <span class="skill-pill">Bootstrap</span>
+          <span class="skill-pill">WordPress</span>
+          <span class="skill-pill">Woocomerce</span>
+          <span class="skill-pill">Elementor</span>
+          <span class="skill-pill">Shopify</span>
+          <span class="skill-pill">Divi</span>
+          <span class="skill-pill">Joomla</span>
+        </div>
+      </div>
+      <div class="glass-card skill-card reveal reveal-delay-3">
+        <div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div>
+        <h3>Visual & Graphic Design</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Photoshop</span>
+          <span class="skill-pill">Illustrator</span>
+          <span class="skill-pill">Canva</span>
+          <span class="skill-pill">InDesign</span>
+          <span class="skill-pill">CorelDRAW</span>
+          <span class="skill-pill">Lightroom</span>
+          <span class="skill-pill">After Effects</span>
+          <span class="skill-pill">Affinity Suite</span>
+        </div>
+      </div>
+      <div class="glass-card skill-card reveal reveal-delay-4">
+        <div class="skill-icon"><i class="fa-solid fa-cube"></i></div>
+        <h3>3D Art & Modeling</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">ZBrush</span>
+          <span class="skill-pill">Blender</span>
+          <span class="skill-pill">KeyShot</span>
+          <span class="skill-pill">PrusaSlicer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience">
+  <div class="section-inner">
+    <span class="section-label reveal">CV</span>
+    <h2 class="section-heading reveal">Experiencia &<br>Educación</h2>
+    <div class="exp-grid">
+
+      <!-- Education -->
+      <div class="exp-col timeline-col reveal reveal-delay-1">
+        <h3><i class="fa-solid fa-graduation-cap"></i> Educación</h3>
+        <div class="glass-card exp-item">
+          <h4>Modelado e Impresión 3D</h4>
+          <h4><a href="https://www.udemy.com" target="_blank">Online / Autodidacta</a></h4>
+          <span class="exp-year">2017</span>
+          <p>Formación autodidacta enfocada en escultura digital, optimización de modelos para impresión 3D y workflows de producción utilizando ZBrush y Blender.</p>
+        </div>
+        <div class="glass-card exp-item">
+          <h4>Certificación en Fotografía</h4>
+          <h4><a href="https://www.udemy.com" target="_blank">Udemy</a></h4>
+          <p>Formación autodidacta orientada al dominio técnico de cámaras, composición visual y esquemas de iluminación, complementada con proyectos prácticos de captura y revelado digital.</p>
+          <span class="exp-year">2018–2019 · Online</span>
+        </div>
+        <div class="glass-card exp-item">
+          <h4>Especialización UI/UX Designer</h4>
+          <h4><a href="https://www.ucse.edu.ar/" target="_blank">Universidad Católica (UCSE)</a></h4>
+          <p>Formación avanzada en diseño centrado en el usuario, abarcando desde la investigación y wireframing hasta el prototipado interactivo y la optimización de usabilidad.</p>
+          <span class="exp-year">2016–2017 · Argentina</span>
+        </div>
+        <div class="glass-card exp-item">
+          <h4>Diseñador Gráfico y Web</h4>
+          <h4><a href="https://www.ucse.edu.ar/" target="_blank">Universidad Católica (UCSE)</a></h4>
+          <span class="exp-year">2009–2012 · Argentina</span>
+          <p>Titulación completada con distinción académica (promedio 9.2/10), desarrollando bases sólidas en comunicación visual y arquitectura de la información.</p>
+        </div>
+      </div>
+
+      <!-- Work -->
+      <div class="exp-col timeline-col reveal reveal-delay-2">
+        <h3><i class="fa-solid fa-briefcase"></i> Experiencia</h3>
+        <div class="glass-card exp-item">
+          <h4>Graphic / UI/UX Designer<br><a>Mamma Sicilia</a></h4>
+          <span class="exp-year">2023–2024 · Sicilia, Italia</span>
+          <ul>
+            <li> Diseño de interfaces web responsivas enfocadas en experiencia de usuario y optimización visual.</li>
+            <li>Desarrollo de identidad visual, recursos gráficos y contenido digital para ecommerce y redes sociales.</li>
+            <li>Optimización de imágenes y assets para mejorar rendimiento y tiempos de carga del sitio.</li>
+            <li>Diseño, desarrollo y mantenimiento de sitio ecommerce, gestionando estructura visual, actualización de contenido y optimización general de la experiencia de compra.</li>
+          </ul>
+        </div>
+        <div class="glass-card exp-item">
+          <h4>Modelador 3D / Artista Digital<br><a>CGTrader · Cults3D</a></h4>
+          <span class="exp-year">2020–2024 · Freelance</span>
+          <p>Creación, optimización y comercialización internacional de assets 3D. Posicionamiento sostenido en el Top Ventas de plataformas referentes del sector y gestión activa de comunidad, logrando reconocimientos como creador destacado.</p>
+        </div>
+        <div class="glass-card exp-item">
+          <h4>Co-fundador & Product Designer<br><a>Hobotnica</a></h4>
+          <span class="exp-year">2020–2022 · Argentina</span>
+          <ul>
+            <li>Fundación y gestión de agencia digital. Lideré la dirección de arte y la estrategia de producto para clientes B2B/B2C.</li>
+            <li>Diseño de arquitecturas de información y flujos de usuario completos para aplicaciones móviles desde su fase de ideación.</li>
+          </ul>
+        </div>
+        <div class="glass-card exp-item">
+          <h4>UI/UX · Web Designer<br><a>CIARDI</a></h4>
+          <span class="exp-year">2015–2020 · Argentina</span>
+          <ul>
+            <li>Conceptualización de productos digitales (web/apps) centrados en maximizar la retención y usabilidad.</li>
+            <li>Diseño y desarrollo de landing pages y sitios ecommerce orientados a conversión, optimización visual y experiencia de usuario.</li>
+            <li>Diseño de interfaces lúdicas y funcionales para videojuegos mobile y HTML5.</li>
+            <li>Trabajo en metodologías ágiles junto a desarrolladores para garantizar una implementación pixel-perfect.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Awards -->
+      <div class="exp-col timeline-col reveal reveal-delay-3">
+        <h3><i class="fa-solid fa-trophy"></i> Premios & Logros</h3>
+        <div class="glass-card exp-item">
+          <h4>1er Premio Concurso de Innovación</h4>
+          <span class="exp-year">2016 · Min. de Cultura y Turismo (ARG)</span>
+          <p>Galardonado con el 1er lugar por el desarrollo independiente de un videojuego educativo diseñado para fomentar la diversidad cultural, destacando la intersección entre tecnología y valor social.</p>
+        </div>
+        <div class="glass-card exp-item">
+          <h4>Hito de Producto: +2M Descargas</h4>
+          <span class="exp-year">2016 · Lanzamiento Independiente</span>
+          <p>Desarrollé y publiqué 'Pipita Onfire', un videojuego móvil que alcanzó la viralidad orgánica superando los 2.000.000 de descargas globales. El éxito del proyecto generó una amplia cobertura en medios de primer nivel en Argentina e Italia.</p>
+          <ul class="press-links" style="margin-top:0.6rem">
+            <li><a href="https://www.gazzetta.it/Calcio/Serie-A/Juventus/07-08-2016/higuain-sfotto-argentina-app-fare-gol-finale-160637427567.shtml" target="_blank">La Gazzetta dello Sport</a></li>
+            <li><a href="https://www.vesuviolive.it/calcio-napoli/159840-foto-anche-argentina-sfottono-higuain-nasce-lapp-pipita-fire/" target="_blank">Vesuviolive</a></li>
+            <li><a href="https://tn.com.ar/deportes/polideportivo/2016/08/08/pipita-on-fire-el-juego-en-el-que-tenes-que-ayudar-a-higuain-a-meter-goles-en-las-finales/" target="_blank">TN</a></li>
+            <li><a href="https://es.besoccer.com/noticia/asi-es-pipita-on-fire-la-app-que-se-burla-de-higuain" target="_blank">Besoccer</a></li>
+          </ul>
+        </div>
+        <div class="glass-card exp-item">
+          <h4>Distinción Gubernamental</h4>
+          <span class="exp-year">2018 · Gobierno de la Prov. de Jujuy</span>
+          <p>Galardón oficial otorgado en reconocimiento a la trayectoria, el espíritu emprendedor y el aporte al sector tecnológico local mediante el uso avanzado e innovador de impresión 3D.</p>
+          <ul class="press-links" style="margin-top:0.6rem">
+            <li><a href="https://prensa.jujuy.gob.ar/artesanos/estatuilla-los-primeros-premios-la-fne-n42369" target="_blank">Ver distinción</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PORTFOLIO ===================== -->
+<section id="portfolio">
+  <div class="section-inner">
+    <div class="portfolio-header">
+      <div>
+        <span class="section-label reveal">Portfolio</span>
+        <h2 class="section-heading reveal" style="margin-bottom:0">Proyectos<br>seleccionados</h2>
+      </div>
+      <div class="filter-tabs reveal reveal-delay-1">
+        <button class="filter-btn active" data-filter="all">Todo</button>
+        <button class="filter-btn" data-filter="user-interface">UI/UX</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="graphic">Gráfico</button>
+        <button class="filter-btn" data-filter="3D">3D</button>
+      </div>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <div class="portfolio-item reveal" data-cats="user-interface">
+        <img src="assets/g1.webp" alt="Doctor Appointment">
+        <div class="portfolio-overlay">
+          <h5>Doctor Appointment UX & UI</h5>
+          <span>UI/UX Designer</span>
+          <a href="https://www.behance.net/gallery/175348375/Doctor-Appointment-UX-UI-Case-Study" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-1" data-cats="web user-interface">
+        <img src="assets/g2.webp" alt="Landing Page">
+        <div class="portfolio-overlay">
+          <h5>Landing Page</h5>
+          <span>UI/UX Designer</span>
+          <a href="https://www.behance.net/gallery/176331149/Landing-Page-Design-UIUX" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-2" data-cats="graphic">
+        <img src="assets/g3.webp" alt="Miele Vita">
+        <div class="portfolio-overlay">
+          <h5>Miele Vita – Packaging</h5>
+          <span>Graphic Designer</span>
+          <a href="https://www.behance.net/gallery/181825107/Mockups-Packaging-Miele-Vita" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-1" data-cats="graphic">
+        <img src="assets/g4.webp" alt="Mamma Sicilia">
+        <div class="portfolio-overlay">
+          <h5>Mamma Sicilia / Branding</h5>
+          <span>Graphic Designer</span>
+          <a href="https://www.behance.net/gallery/197940693/Logo-Mockups-Mamma-Sicilia" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-2" data-cats="user-interface">
+        <img src="assets/g5.webp" alt="App Fitness">
+        <div class="portfolio-overlay">
+          <h5>App Fitness</h5>
+          <span>UI/UX Designer</span>
+          <a href="https://www.behance.net/gallery/173012513/App-Fitness" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-3" data-cats="user-interface">
+        <img src="assets/g6.webp" alt="Relax Game UI">
+        <div class="portfolio-overlay">
+          <h5>Relax – Videogame UI</h5>
+          <span>Videogame UI</span>
+          <a href="https://www.behance.net/gallery/168305437/Relax-Game-UI-Design" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cats="3D">
+        <img src="assets/g7.webp" alt="Superman and Lois">
+        <div class="portfolio-overlay">
+          <h5>Superman and Lois</h5>
+          <span>3D Designer</span>
+          <a href="https://www.artstation.com/artwork/Wm0KgG" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-1" data-cats="3D">
+        <img src="assets/g8.webp" alt="Spartan Warrior">
+        <div class="portfolio-overlay">
+          <h5>Spartan Warrior</h5>
+          <span>3D Designer</span>
+          <a href="https://www.artstation.com/artwork/QnGK38" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-2" data-cats="3D">
+        <img src="assets/g9.webp" alt="Carlos Tevez Sculpture">
+        <div class="portfolio-overlay">
+          <h5>Carlos Tevez Sculpture</h5>
+          <span>3D Designer</span>
+          <a href="https://www.artstation.com/artwork/XnQe8R" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cats="graphic">
+        <img src="assets/g10.webp" alt="Restaurant Menu">
+        <div class="portfolio-overlay">
+          <h5>Restaurant Menu Redesign</h5>
+          <span>Graphic Designer</span>
+          <a href="https://www.behance.net/gallery/197986493/Restaurant-Menu-Redesign" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-1" data-cats="user-interface web">
+        <img src="assets/g11.webp" alt="Web Ecommerce">
+        <div class="portfolio-overlay">
+          <h5>Web Ecommerce</h5>
+          <span>UI/UX Design</span>
+          <a href="https://www.behance.net/gallery/173520869/Web-Ecommerce-UIUX-Design" target="_blank"></a>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal reveal-delay-2" data-cats="graphic">
+        <img src="assets/g12.webp" alt="Vigor">
+        <div class="portfolio-overlay">
+          <h5>Vigor</h5>
+          <span>Motion Graphics</span>
+          <a href="https://www.behance.net/gallery/202860429/VIGOR-Animate-Banner" target="_blank"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-name">Emanuel <span>Skorepa</span></div>
+      <div class="footer-tagline">UI/UX Designer · Web Designer · 3D Modeling</div>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/emanuelsko/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.behance.net/emanuelsko" target="_blank" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+      <a href="https://www.instagram.com/emanuelsko" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.artstation.com/emanuelsko" target="_blank" aria-label="ArtStation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 512 512" fill="currentColor"><path d="m2 377.4l43 74.3A51.35 51.35 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.38 51.38 0 0 0 290.2 32h-88.4l257.3 447.6l40.7-70.5c1.9-3.2 21-29.7 2-59.1M275 304.5l-115.5-200L44 304.5z"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">© 2026 Emanuel Skorepa · Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script>
+  // Loader
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loader').classList.add('hidden');
+    }, 600);
+  });
+
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+
+  // Redirección del selector de idiomas
+  function changeLanguage(lang) {
+      let targetUrl = "";
+
+      if (lang === "es") {
+        targetUrl = "../es/index.html";
+      } else if (lang === "en") {
+        targetUrl = "../index.html";
+      } else if (lang === "it") {
+        targetUrl = "../it/index.html";
+      }
+
+      // ¡Aquí está la magia que faltaba!
+      if (targetUrl) {
+        window.location.href = targetUrl;
+      }
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Portfolio filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      portfolioItems.forEach(item => {
+        const cats = item.dataset.cats || '';
+        if (filter === 'all' || cats.includes(filter)) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Smooth active nav link
+  const sections = document.querySelectorAll('section[id], footer[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current
+        ? 'var(--green)' : '';
+    });
+  });
+</script>
+</body>
+</html>
