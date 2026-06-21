@@ -944,3 +944,71 @@ footer::before {
         transparent 95%
     );
 }
+
+
+/* Contenedor del mouse */
+       .mouse-icon {
+           width: 30px;
+           height: 50px;
+           border: 2px solid white;
+           border-radius: 20px;
+           position: relative;
+
+           cursor: pointer;
+           /* Una pequeña transición por si queremos agregar efectos al pasar el cursor (hover) */
+           transition: transform 0.3s ease, border-color 0.3s ease;
+       }
+
+       .mouse-icon:hover {
+           transform: translateY(3px); /* Baja un poco al pasar el cursor */
+           border-color: #2bffb0; /* Color tailwind slate-300 */
+       }
+
+       /* La rueda (scroll wheel) animada dentro del mouse */
+       .mouse-wheel {
+           width: 4px;
+           height: 10px;
+           background-color: white;
+           border-radius: 2px;
+           position: absolute;
+           top: 8px;
+           left: 50%;
+           transform: translateX(-50%);
+           /* La animación de "bajar" continuamente */
+           animation: scroll-down 1.5s infinite;
+       }
+
+       /* Cambiar color de la rueda en hover */
+       .mouse-icon:hover .mouse-wheel {
+           background-color: #cbd5e1;
+       }
+
+       /* Definición de la animación de la rueda */
+       @keyframes scroll-down {
+           0% {
+               top: 8px;
+               opacity: 1;
+           }
+           100% {
+               top: 24px; /* Hasta dónde baja la rueda */
+               opacity: 0;  /* Se desvanece al llegar abajo */
+           }
+       }
+
+       /* Animación opcional para hacer que todo el bloque (texto + mouse) "flote" ligeramente */
+       .bounce-soft {
+           animation: float-soft 3s ease-in-out infinite;
+       }
+
+       @keyframes float-soft {
+           0% { transform: translateY(0px); }
+           50% { transform: translateY(-8px); }
+           100% { transform: translateY(0px); }
+       }
+
+       .bounce-soft {
+
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+}
